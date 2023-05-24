@@ -160,6 +160,19 @@ h4 {
     padding: 0 0.75em 0 0;
 }
 
+.mobile-hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* 0.reusable selector */
@@ -170,6 +183,7 @@ header li > a {
     display: flex;
     position: relative;
     line-height: inherit;
+    transition: var(--trans-color);
 }
 
 
@@ -208,6 +222,90 @@ header li > a {
 }
     /* hd nav */
 
+
+.header-nav {
+    padding: 0.5em 0;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.trigger {
+    font-size: 1.5em;
+    display: flex;
+    padding: 0.25em;
+    margin-right: 0.5em;
+}
+.logo a {
+    font-size: 1.75em;
+    font-family: 'Poppins';
+    font-weight: var(--fw8);
+    position: relative;
+    display: flex;
+    padding-left: 0.75em;
+    margin-right: 2em;
+
+}
+
+.circle{
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: var(--percent50);
+    background-color: var(--light-bg-color);
+    z-index: -1;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--percent50);
+    background-color: var(--secondary-color);
+    bottom: 5px;
+    right: 5px;
+    opacity: .4;
+}
+.header-nav nav > ul {
+    line-height: 100px;
+    gap: 2em;
+}
+.fly-item {
+    position: absolute;
+    height: 16px;
+    font-size: var(--font-smaller);
+    padding: 3px;
+    text-align: center;
+    line-height: 10px;
+    color: var(--white-color);
+}
+nav .fly-item {
+    top: 50%;
+    margin-top: -24px;
+    width: 30px;
+    right: -34px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.header-nav .right {
+    position: relative;
+    margin-left: auto;
+}
+
+.header-nav .right .icon-large {
+    position: relative;
+}
+.header-nav .right .fly-item {
+    top: 0;
+    right: 16px;
+    width: 16px;
+    background-color: var(--secondary-dark-color);
+    border-radius: var(--percent50);
+}
     /* hd main, deparment category */
 
     /* search form */
@@ -248,5 +346,23 @@ header li > a {
     .container {
         padding: 0 2em;
     }
+    .desktop-hide {
+        display: none;
+    }
+    .mobile-hide {
+        display: block;
+    }
+    .logo a {
+        margin-right: 2em;
+    }
+    .header-nav {
+        padding: 0;
+        margin: 0;
+        border-bottom: 0;
+    }
+    .header-nav .right {
+        margin-left: 1em;
+    }
+
 }
 
