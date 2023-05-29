@@ -721,10 +721,9 @@ form.search button:hover {
     .dpt-menu ul > li > a {
         font-weight: var(--fw5);
         padding: 0 1.5em;
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--);
     }
-    .dpt-menu .has-child > ul,
-    .dpt-menu .mega {
+    .dpt-menu .has-child > ul , .dpt-menu .mega {
         position: absolute;
         top: 0;
         left: var(--percent100);
@@ -742,13 +741,13 @@ form.search button:hover {
         background-size: auto;
     }
     /* showing the firt sub menu */
-    .dpt-menu .has-child:nth-child(1) > ul {
+    .dpt-menu .has-child:nth-child() > ul {
         display: block;
     }
-    .dpt-menu .beauty ul {
+    .dpt-menu .Beauty ul {
         background-image: url(assets/menu/menu_bg1.jpg);
     }
-    .dpt-menu .electric ul {
+    .dpt-menu .Electronic ul {
         background-image: url(assets/menu/menu_bg2.jpg);
     }
     .dpt-menu .fashion ul {
@@ -764,7 +763,7 @@ form.search button:hover {
         right: 0;
         left: 0;
         bottom: 0;
-        background: linear-gradient(90deg, rgba(225,225,225,1) 0%);
+        background: linear-gradient(90deg, rgba(225,225,225,1) 0%, rgba(225,225,225,0.1));
     }
     .dpt-menu .mega {
         width: auto;
